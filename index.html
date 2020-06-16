@@ -110,17 +110,21 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 .content{
   text-align: center;
   width: 1920 px;
+}
+.button{
+ background: red;
+  border-radius: 8px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="605,201" size="100,100">&lt;div class=&#39;content&#39;&gt;
 
 Welcome to PINUS ORI GATEWAY TO THE FUTURE!
 There will be a total of four puzzles.
-Let&#39;s begin
 
-[[Location]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Location" tags="" position="501,398" size="100,100">&lt;div align=&#39;center&#39;&gt;
-YJR P;FRDY JPD[OYS; OMDOMHS[PTR?
-&lt;&lt;textbox &quot;$answer1&quot; &quot;XXXXXXXXX XXXXXXX XXXXXXXX&quot;&gt;&gt;
-[[check your answer]]
+&lt;&lt;button &quot;Let&#39;s begin&quot; &quot;Location&quot;]&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Location" tags="" position="500,398" size="100,100">&lt;div align=&#39;center&#39;&gt;
+Decipher the following text:
+YJR  P;FRDY  JPD[OYS;  OM  DOMHS[PTR
+&lt;&lt;textbox &quot;$answer0&quot; &quot;XXX XXXXXX XXXXXXXX XX XXXXXXXXX&quot;&gt;&gt;
+&lt;&lt;button &quot;Check your answer&quot; &quot;check0&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;/div&gt;
 
 </tw-passagedata><tw-passagedata pid="3" name="Year" tags="" position="500,597" size="100,100">&lt;div align=&#39;center&#39;&gt;
@@ -128,12 +132,15 @@ YJR P;FRDY JPD[OYS; OMDOMHS[PTR?
 Find the most frequent number on the crossword’s solution
 
 A: &lt;&lt;textbox &quot;$answer2&quot; &quot;&quot;&gt;&gt;
-[[check year]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="check your answer" tags="" position="700,398" size="100,100">&lt;div align=&#39;center&#39;&gt;
-&lt;&lt;if $answer1.toLowerCase()==&quot;singapore general hospital&quot;&gt;&gt;
-Well done! Next puzzle: [[Year]]
+&lt;&lt;button &quot;Check your answer&quot; &quot;check2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="check0" tags="" position="611,398" size="100,100">&lt;div align=&#39;center&#39;&gt;
+&lt;&lt;if $answer0.toLowerCase()==&quot;the oldest hospital in singapore&quot;&gt;&gt;
+Well done! So, what is the oldest hospital in singapore?
+&lt;&lt;textbox &quot;$answer1&quot; &quot;XXXXXXXXX XXXXXXX XXXXXXXX&quot;&gt;&gt;
+&lt;&lt;button &quot;Check your answer&quot; &quot;check1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
-Try again! [[Location]] 
+Try again! 
+&lt;&lt;button &quot;Location&quot; &quot;Location&quot;&gt;&gt;&lt;&lt;/button&gt;&gt; 
 &lt;&lt;endif&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Fill in the blanks" tags="" position="503,797" size="100,100">&lt;div align=&#39;center&#39;&gt;
 &lt;img src=&quot;https://i.ibb.co/LgCYpVL/table.png&quot; alt=&quot;table&quot; border=&quot;0&quot;&gt;
@@ -141,31 +148,35 @@ Try again! [[Location]]
 What&#39;s the value of B?
 
 B: &lt;&lt;textbox &quot;$answer3&quot; &quot;&quot;&gt;&gt;
-[[check]] 
+&lt;&lt;button &quot;Check your answer&quot; &quot;check3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Pattern" tags="" position="507,1007" size="100,100">&lt;div align=&#39;center&#39;&gt;
 0, 8, 4, 12, 6, 14, 7, C
 
 What&#39;s the value of C?
 C: &lt;&lt;textbox &quot;$answer4&quot; &quot;&quot;&gt;&gt;
 
-Check your answer [[here]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="check" tags="" position="697,800" size="100,100">&lt;div align=&#39;center&#39;&gt;
+&lt;&lt;button &quot;Check your answer&quot; &quot;check4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="check3" tags="" position="697,800" size="100,100">&lt;div align=&#39;center&#39;&gt;
 &lt;&lt;if $answer3==&quot;21&quot;&gt;&gt;
-Well done! Next puzzle: [[Pattern]]
+Well done! 
+&lt;&lt;button &quot;Next puzzle&quot; &quot;Pattern&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
-Try again [[Fill in the blanks]] 
+Try again! &lt;&lt;button &quot;Fill in the blanks&quot; &quot;Fill in the blanks&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;endif&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="check year" tags="" position="697,600" size="100,100">&lt;div align=&#39;center&#39;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="check2" tags="" position="697,600" size="100,100">&lt;div align=&#39;center&#39;&gt;
 &lt;&lt;if $answer2==&quot;2&quot;&gt;&gt;
-Well done! Next puzzle: [[Fill in the blanks]]
+Well done! 
+&lt;&lt;button &quot;Next puzzle&quot; &quot;Fill in the blanks&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
-Try again! [[Year]] 
+Try again! 
+&lt;&lt;button &quot;Year&quot; &quot;Year&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;endif&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="here" tags="" position="708,1004" size="100,100">&lt;div align=&#39;center&#39;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="check4" tags="" position="708,1004" size="100,100">&lt;div align=&#39;center&#39;&gt;
 &lt;&lt;if $answer4==&quot;15&quot;&gt;&gt;
-Well done! Next puzzle: [[End]]
+Well done! 
+&lt;&lt;button &quot;Final puzzle&quot; &quot;End&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
-Try again [[Pattern]] 
+Try again! &lt;&lt;button &quot;Pattern&quot; &quot;Pattern&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="End" tags="" position="610,1198" size="100,100">&lt;div align=&#39;center&#39;&gt;
 So, where and when?
@@ -173,12 +184,21 @@ Location:
 &lt;&lt;textbox &quot;$location&quot; &quot;&quot;&gt;&gt;
 Year: (A x 1000 + B x C)
 &lt;&lt;textbox &quot;$year&quot; &quot;&quot;&gt;&gt;
-[[finish]]
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="finish" tags="" position="610,1348" size="100,100">&lt;div align=&#39;center&#39;&gt;
+&lt;&lt;button &quot;Finish&quot; &quot;Finish&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Finish" tags="" position="610,1348" size="100,100">&lt;div align=&#39;center&#39;&gt;
 &lt;&lt;if $location.toLowerCase()==&quot;singapore general hospital&quot; &amp;&amp; $year==&quot;2315&quot;&gt;&gt;
 Well done! 
 &lt;&lt;else&gt;&gt;
-You fool. [[Start]] 
+You fool. 
+[[Start]] 
+&lt;&lt;endif&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="check1" tags="" position="723,398" size="100,100">&lt;div align=&#39;center&#39;&gt;
+&lt;&lt;if $answer1.toLowerCase()==&quot;singapore general hospital&quot;&gt;&gt;
+Well done!
+&lt;&lt;button &quot;Next puzzle&quot; &quot;Year&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;else&gt;&gt;
+Try again! 
+&lt;&lt;button &quot;Location&quot; &quot;Location&quot;&gt;&gt;&lt;&lt;/button&gt;&gt; 
 &lt;&lt;endif&gt;&gt;
 &lt;/div&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
