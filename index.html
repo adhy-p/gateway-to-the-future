@@ -100,71 +100,104 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Gateway to the future" startnode="13" creator="Twine" creator-version="2.3.8" ifid="5A58F7B6-BCA0-4219-BE42-7840455C0D39" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">input[type="text"] {
+	<tw-storydata name="Gateway to the future" startnode="13" creator="Twine" creator-version="2.3.8" ifid="5A58F7B6-BCA0-4219-BE42-7840455C0D39" zoom="1" format="SugarCube" format-version="2.31.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css?family=Open+Sans|Cairo');
+
+input[type="text"] {
 	min-width: 50px; /* default: 20em */
   	/*max-width: 5em;*/
 }
-body, tw-story, tw-passage
+
+body{
+  background-image:url("https://pi-nus.org/assets/images/bg/decor.png");
+  background-size: 100%;
+  overflow-y: scroll;
+}
+
+body, tw-story, tw-passage, .passage
 {
-  background-size:cover;
-  width: 1920 px;
-  font-family: Kaige;
+  font-family: 'Open Sans';
   font-size: 20px;
   text-align: center;
+  margin: 0 auto;
+  padding: 0;
 }
-.head, .content{
+
+.title{
   text-align: center;
+  font-family: 'Cairo';
+  font-size: 2.5em;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .button{
  background: red;
  border-radius: 8px;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Gateway" tags="" position="605,201" size="100,100">&lt;div class=&#39;head&#39;&gt;
-&lt;h1&gt;Welcome to PINUS ORI GATEWAY TO THE FUTURE!&lt;/h1&gt;
+
+.twocolumn {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+  text-align: center;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">$('#ui-bar').remove();
+$(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1" name="Gateway" tags="" position="605,201" size="100,100">&lt;div class=&#39;title&#39;&gt;
+
+Welcome to PINUS ORI GATEWAY TO THE FUTURE!
 &lt;/div&gt;
-&lt;div class=&#39;content&#39;&gt;
 There will be a total of four puzzles.
 Are you ready to TRAVERSE to the future?
 
 &lt;&lt;button &quot;Let&#39;s begin&quot; &quot;Location&quot;]&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="Location" tags="" position="500,398" size="100,100">&lt;div align=&#39;center&#39;&gt;
+</tw-passagedata><tw-passagedata pid="2" name="Location" tags="" position="500,398" size="100,100">&lt;div class=&quot;title&quot;&gt;
+Puzzle 1: Location
+&lt;/div&gt;
 Decipher the following text:
 P;FRDY  JPD[OYS;  OM  DOMHS[PTR
-&lt;&lt;textbox &quot;$answer0&quot; &quot;XXXXXX XXXXXXXX XX XXXXXXXXX&quot;&gt;&gt;
-&lt;&lt;button &quot;Check your answer&quot; &quot;check0&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="3" name="Successor" tags="" position="500,597" size="100,100">&lt;div align=&#39;center&#39;&gt;
+&lt;&lt;textbox &quot;$answer0&quot; &quot;&quot;&gt;&gt;
+
+&lt;&lt;button &quot;Check your answer&quot; &quot;check0&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+
+</tw-passagedata><tw-passagedata pid="3" name="Successor" tags="" position="500,597" size="100,100">&lt;div class=&quot;title&quot;&gt;
+Puzzle 2: Successor
+&lt;/div&gt;
 A edah tcietsins atwdne ot saps wndo ish ceerst evnicac ot a uscorcsse. eH egva a ipcee fo na dlo calendar reppa sutj a ometmn obfeer eh ddie.  ehT serbmun 6,4,9,10,11 rea nriettw no ti. Ohw is teh successor? (ueoY&#39;r onigg ot idfn eht cssseocru sa ouy tvrlea ot eht uuertf).
 
 Answer: &lt;&lt;textbox &quot;$answer2&quot; &quot;&quot;&gt;&gt;
+
 &lt;&lt;button &quot;Check your answer&quot; &quot;check2&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="check0" tags="" position="609,398" size="100,100">&lt;div align=&#39;center&#39;&gt;
-&lt;&lt;if $answer0.toLowerCase()==&quot;oldest hospital in singapore&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="4" name="check0" tags="" position="609,398" size="100,100">&lt;&lt;if $answer0.toLowerCase()==&quot;oldest hospital in singapore&quot;&gt;&gt;
 Well done! What is the oldest hospital in singapore?
+
 &lt;&lt;textbox &quot;$answer1&quot; &quot;&quot;&gt;&gt;
+
 &lt;&lt;button &quot;Check your answer&quot; &quot;check1&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 Try again! 
+
 &lt;&lt;button &quot;Location&quot; &quot;Location&quot;&gt;&gt;&lt;&lt;/button&gt;&gt; 
-&lt;&lt;endif&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Passcode" tags="" position="503,797" size="100,100">&lt;div align=&#39;center&#39;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Passcode" tags="" position="503,797" size="100,100">&lt;div class=&quot;title&quot;&gt;
+Puzzle 3: Passcode
+&lt;/div&gt;
 In order to pass through the gate to the future, you need to decipher the passcode. The passcode consists of 3 positive numbers. XYZ in this order : (X=&lt;Y=&lt;Z). As a team, you can ask up to 3 hints. The first two hints are:
 The product of the 3 members XYZ is 36
-The sum of X,Y and Z is equal to the next OG spaceship number (You don’t know what it is and you can’t ask the next OG)
+The sum of X,Y and Z is equal to the next OG spaceship number 
+(You don’t know what it is and you can’t ask the next OG)
 The next OG is still confused, so here is the last hint
 The biggest number (Z) only appears once
 After hearing the last hint, the next OG can decipher the code and can pass through the gate. What is X,Y and Z
+
 X: &lt;&lt;textbox &quot;$answer3X&quot; &quot;&quot;&gt;&gt;
 Y: &lt;&lt;textbox &quot;$answer3Y&quot; &quot;&quot;&gt;&gt;
 Z: &lt;&lt;textbox &quot;$answer3Z&quot; &quot;&quot;&gt;&gt;
-&lt;&lt;button &quot;Check your answer&quot; &quot;check3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Otto" tags="" position="507,1007" size="100,100">&lt;div align=&#39;center&#39;&gt;
-&lt;img src=&quot;https://i.ibb.co/T0yF1Jh/843000-10151412824808540-460777307-o.jpg&quot; alt=&quot;843000-10151412824808540-460777307-o&quot; border=&quot;0&quot;&gt;
 
-&lt;h2&gt; To OTTO with love&lt;/h2&gt;
-
+&lt;&lt;button &quot;Check your answer&quot; &quot;check3&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Otto" tags="" position="507,1007" size="100,100">&lt;div class=&quot;title&quot;&gt;
+Puzzle 4: Otto
+&lt;/div&gt; 
+&lt;img src=&quot;https://i.ibb.co/T0yF1Jh/843000-10151412824808540-460777307-o.jpg&quot; alt=&quot;843000-10151412824808540-460777307-o&quot; border=&quot;0&quot; width=&quot;375&quot; height=&quot;375&quot;&gt;
+To OTTO with love
+&lt;div class=&#39;twocolumn&#39;&gt;
 //Ew, Otto has a hot towel//
 Where is it from? I wonder
 Yo, banana boy!
@@ -174,7 +207,7 @@ What have you done
 One more time
 A Nut for a jar of tuna 
 Is it worth it?
-I ponder? //No!//
+I ponder? No!
 //O lemon, no melon//
 Watermelon?
 I gotta choose
@@ -191,56 +224,58 @@ He will forever
 Live not on evil
 Won’t lovers revolt now?
 Now Eve, we’ve here, we’ve won
-
+&lt;/div&gt;
 Answer: &lt;&lt;textbox &quot;$answer41&quot; &quot;&quot;&gt;&gt; 
 
 &lt;&lt;button &quot;Check your answer&quot; &quot;check4&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="check3" tags="" position="697,800" size="100,100">&lt;div align=&#39;center&#39;&gt;
-&lt;&lt;if $answer3X==&quot;2&quot; &amp;&amp; $answer3Y==&quot;2&quot; &amp;&amp; $answer3Z==&quot;9&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="7" name="check3" tags="" position="697,800" size="100,100">&lt;&lt;if $answer3X==&quot;2&quot; &amp;&amp; $answer3Y==&quot;2&quot; &amp;&amp; $answer3Z==&quot;9&quot;&gt;&gt;
 Well done! The year is: X-Z-Y-Z
+
 &lt;&lt;button &quot;Next puzzle&quot; &quot;Otto&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
-Try again! &lt;&lt;button &quot;Passcode&quot; &quot;Passcode&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;endif&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="check2" tags="" position="697,600" size="100,100">&lt;div align=&#39;center&#39;&gt;
-&lt;&lt;if $answer2.toLowerCase()==&quot;jason&quot;&gt;&gt;
+Try again! 
+
+&lt;&lt;button &quot;Passcode&quot; &quot;Passcode&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="check2" tags="" position="697,600" size="100,100">&lt;&lt;if $answer2.toLowerCase()==&quot;jason&quot;&gt;&gt;
 Well done! 
+
 &lt;&lt;button &quot;Next puzzle&quot; &quot;Passcode&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 Try again! 
+
 &lt;&lt;button &quot;Successor&quot; &quot;Successor&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;endif&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="check4" tags="" position="708,1004" size="100,100">&lt;div align=&#39;center&#39;&gt;
-&lt;&lt;if $answer41.toLowerCase()==&quot;linus&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="9" name="check4" tags="" position="708,1004" size="100,100">&lt;&lt;if $answer41.toLowerCase()==&quot;linus&quot;&gt;&gt;
 Well done! 
+
 &lt;&lt;button &quot;Final puzzle&quot; &quot;End&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
-Try again! &lt;&lt;button &quot;Otto&quot; &quot;Otto&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;endif&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="End" tags="" position="610,1198" size="100,100">&lt;div align=&#39;center&#39;&gt;
-So, where and when?
+Try again!
+
+&lt;&lt;button &quot;Otto&quot; &quot;Otto&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="End" tags="" position="610,1198" size="100,100">&lt;div class=&quot;title&quot;&gt; So, where and when? &lt;/div&gt;
 Location:
 &lt;&lt;textbox &quot;$location&quot; &quot;&quot;&gt;&gt;
 Year: 
 &lt;&lt;textbox &quot;$year&quot; &quot;&quot;&gt;&gt;
-&lt;&lt;button &quot;Finish&quot; &quot;Finish&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Finish" tags="" position="610,1348" size="100,100">&lt;div align=&#39;center&#39;&gt;
-&lt;&lt;if $location.toLowerCase()==&quot;singapore general hospital&quot; &amp;&amp; $year==&quot;2929&quot;&gt;&gt;
+
+&lt;&lt;button &quot;Finish&quot; &quot;Finish&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Finish" tags="" position="610,1348" size="100,100">&lt;&lt;if $location.toLowerCase()==&quot;singapore general hospital&quot; &amp;&amp; $year==&quot;2929&quot;&gt;&gt;
 Congratulations, you have reached your destination!
+
 &lt;&lt;button &quot;Next&quot; &quot;Slide 6&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 You fool. 
+
 [[Gateway]] 
-&lt;&lt;endif&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="12" name="check1" tags="" position="723,398" size="100,100">&lt;div align=&#39;center&#39;&gt;
-&lt;&lt;if $answer1.toLowerCase()==&quot;singapore general hospital&quot;&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="check1" tags="" position="723,398" size="100,100">&lt;&lt;if $answer1.toLowerCase()==&quot;singapore general hospital&quot;&gt;&gt;
 Well done! That will be our location.
+
 &lt;&lt;button &quot;Next puzzle&quot; &quot;Successor&quot;&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;else&gt;&gt;
 Try again! 
+
 &lt;&lt;button &quot;Location&quot; &quot;check0&quot;&gt;&gt;&lt;&lt;/button&gt;&gt; 
 &lt;&lt;endif&gt;&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Start" tags="" position="101,159" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 2&quot;&gt;&lt;img src=&quot;https://i.imgur.com/fLU1sZV.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="14" name="Slide 2" tags="" position="101,302" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 3&quot;&gt;&lt;img src=&quot;https://i.imgur.com/9nj2tCW.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="15" name="Slide 3" tags="" position="103,452" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 4&quot;&gt;&lt;img src=&quot;https://i.imgur.com/6XRjeS1.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="16" name="Slide 4" tags="" position="103,602" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 5&quot;&gt;&lt;img src=&quot;https://i.imgur.com/e20E3aO.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="17" name="Slide 5" tags="" position="103,752" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Gateway&quot;&gt;&lt;img src=&quot;https://i.imgur.com/05fnQ6R.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="18" name="Slide 6" tags="" position="103,901" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 7&quot;&gt;&lt;img src=&quot;https://i.imgur.com/4vjR5vl.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="19" name="Slide 7" tags="" position="103,1053" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 8&quot;&gt;&lt;img src=&quot;https://i.imgur.com/hd0xCsx.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="20" name="Slide 8" tags="" position="103,1202" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 9&quot;&gt;&lt;img src=&quot;https://i.imgur.com/2ukfMRe.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="21" name="Slide 9" tags="" position="103,1352" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 10&quot;&gt;&lt;img src=&quot;https://i.imgur.com/ao2mmOT.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="22" name="Slide 10" tags="" position="103,1502" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 11&quot;&gt;&lt;img src=&quot;https://i.imgur.com/m7pSq11.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="23" name="Slide 11" tags="" position="103,1652" size="100,100">&lt;a href=&quot;javascript:void(0)&quot; data-passage=&quot;Slide 12&quot;&gt;&lt;img src=&quot;https://i.imgur.com/XhUmTBC.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="24" name="Slide 12" tags="" position="103,1802" size="100,100">&lt;img src=&quot;https://i.imgur.com/skwQfSn.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;
+</tw-passagedata><tw-passagedata pid="13" name="Start" tags="" position="101,159" size="100,100">&lt;a data-passage=&quot;Slide 2&quot;&gt;&lt;img src=&quot;https://i.imgur.com/fLU1sZV.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot; align=&quot;center&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="14" name="Slide 2" tags="" position="101,302" size="100,100">&lt;a data-passage=&quot;Slide 3&quot;&gt;&lt;img src=&quot;https://i.imgur.com/9nj2tCW.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="15" name="Slide 3" tags="" position="103,452" size="100,100">&lt;a data-passage=&quot;Slide 4&quot;&gt;&lt;img src=&quot;https://i.imgur.com/6XRjeS1.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="16" name="Slide 4" tags="" position="103,602" size="100,100">&lt;a data-passage=&quot;Slide 5&quot;&gt;&lt;img src=&quot;https://i.imgur.com/e20E3aO.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="17" name="Slide 5" tags="" position="103,752" size="100,100">&lt;a data-passage=&quot;Gateway&quot;&gt;&lt;img src=&quot;https://i.imgur.com/05fnQ6R.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="18" name="Slide 6" tags="" position="103,901" size="100,100">&lt;a data-passage=&quot;Slide 7&quot;&gt;&lt;img src=&quot;https://i.imgur.com/4vjR5vl.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="19" name="Slide 7" tags="" position="103,1053" size="100,100">&lt;a data-passage=&quot;Slide 8&quot;&gt;&lt;img src=&quot;https://i.imgur.com/hd0xCsx.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="20" name="Slide 8" tags="" position="103,1201" size="100,100">&lt;a data-passage=&quot;Slide 9&quot;&gt;&lt;img src=&quot;https://i.imgur.com/2ukfMRe.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="21" name="Slide 9" tags="" position="103,1350" size="100,100">&lt;a data-passage=&quot;Slide 10&quot;&gt;&lt;img src=&quot;https://i.imgur.com/ao2mmOT.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="22" name="Slide 10" tags="" position="103,1502" size="100,100">&lt;a data-passage=&quot;Slide 11&quot;&gt;&lt;img src=&quot;https://i.imgur.com/m7pSq11.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="23" name="Slide 11" tags="" position="103,1652" size="100,100">&lt;a data-passage=&quot;Slide 12&quot;&gt;&lt;img src=&quot;https://i.imgur.com/XhUmTBC.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="24" name="Slide 12" tags="" position="103,1802" size="100,100">&lt;img src=&quot;https://i.imgur.com/skwQfSn.jpg&quot; width=&quot;1088&quot; height=&quot;612&quot;&gt;
 
 
 </tw-passagedata></tw-storydata>
